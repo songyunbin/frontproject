@@ -37,21 +37,25 @@
   height: 100%;
 }
 
-/* ✅ 여기 수정 */
 .skill-header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;  
+  gap: 12px;
   margin-bottom: 12px;
   font-weight: 600;
 }
 
+
 .skill-name {
   color: #3d3935;
   font-size: 18px;
-  max-width: 70%;
-  word-break: keep-all;
+  flex: 1;
+  white-space: normal;      
+  word-break: keep-all;     
+  line-height: 1.4;
 }
+
 
 .skill-percent {
   color: #d4a574;
@@ -81,7 +85,12 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
   animation: shimmer 2s infinite;
 }
 
@@ -89,9 +98,6 @@
   box-shadow: 0 0 20px rgba(218, 189, 142, 0.4);
 }
 
-/* =========================
-   PRINT 전용 스타일
-========================= */
 @media print {
 
   @page {

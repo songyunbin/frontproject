@@ -15,6 +15,7 @@ function Skills() {
       <div className="container">
         <div className="fade-in-scroll">
           <h2 className="section-title">Skills</h2>
+
           <div className="skills-container">
             {skills.map((skill, index) => (
               <div key={index} className="skill-item">
@@ -35,6 +36,7 @@ function Skills() {
               </div>
             ))}
           </div>
+
         </div>
       </div>
     </section>

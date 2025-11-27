@@ -43,7 +43,6 @@ nav li {
   list-style: none;
 }
 
-/* 기본 메뉴 버튼 */
 nav button {
   background: none;
   border: none;
@@ -78,7 +77,6 @@ nav button:hover::after {
   width: 60%;
 }
 
-/* ✅ 인쇄 / PDF 버튼 스타일 (완전 버튼화) */
 .print-button {
   background: #d4a574;
   color: #fff;
@@ -98,7 +96,6 @@ nav button:hover::after {
   box-shadow: 0 6px 14px rgba(212, 165, 116, 0.4);
 }
 
-/* 프린트 시 헤더 숨기기 */
 @media print {
   .header, .print-button {
     display: none !important;

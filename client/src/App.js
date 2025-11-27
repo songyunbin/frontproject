@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 
 import Header from './components/Header';
 import Intro from './components/Intro';
@@ -17,7 +17,9 @@ import AiProject from './page/AiProject';
 
 import './App.css';
 
-function App() {
+function MainPage() {
+  const location = useLocation();
+
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
@@ -35,32 +37,31 @@ function App() {
     });
 
     return () => observer.disconnect();
-  }, []);
+  }, [location]);
 
+  return (
+    <div className="App">
+      <Header />
+      <Intro />
+      <About />
+      <Skills />
+      <Resume />
+      <Portfolio />
+      <Contact />
+      <Footer />
+    </div>
+  );
+}
+
+function App() {
   return (
     <Router>
       <Routes>
-
-        <Route 
-          path="/" 
-          element={
-            <div className="App">
-              <Header />
-              <Intro />
-              <About />
-              <Skills />
-              <Resume />
-              <Portfolio />
-              <Contact />
-              <Footer />
-            </div>
-          }
-        />
+        <Route path="/" element={<MainPage />} />
         <Route path="/portfolio/project-refresh" element={<ProjectRefresh />} />
         <Route path="/portfolio/mapmories" element={<Mapmories />} />
         <Route path="/portfolio/talkdoc" element={<Talkdoc />} />
         <Route path="/portfolio/aiproject" element={<AiProject/>} />
-
       </Routes>
     </Router>
   );

@@ -41,7 +41,7 @@ function ProjectRefresh() {
             </p>
           </div>
 
-          <h2>주요 기능</h2>
+          <h2>프로젝트 설명</h2>
           
           <div className="features-grid-text">
             {features.map((feature, index) => (
