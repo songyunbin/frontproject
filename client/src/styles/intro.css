@@ -1,0 +1,78 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: linear-gradient(135deg, #f5e6d3 0%, #ffe8cc 25%, #fff5e6 50%, #e8f5e9 75%, #d4f1d4 100%);
+  text-align: left;
+  padding: 120px 30px 80px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:
+    radial-gradient(circle at 20% 30%, rgba(212, 165, 116, 0.3) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(168, 218, 181, 0.25) 0%, transparent 50%);
+  mix-blend-mode: overlay;
+}
+
+.hero-content {
+  padding: 0 20px;
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+}
+
+.hero-title {
+  font-size: 80px;
+  font-weight: 900;
+  margin-bottom: 20px;
+  color: #3d3935;
+  animation: fadeInUp 0.8s ease-out;
+  letter-spacing: -2px;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.hero-subtitle {
+  display: none;
+}
+
+.highlight {
+  color: #c9975b;
+  font-weight: 900;
+  background: linear-gradient(45deg, #d4a574 0%, #c9975b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-text {
+  font-size: 20px;
+  color: #6b6158;
+  max-width: 600px;
+  margin: 0;
+  margin-top: 40px;
+  animation: fadeInUp 0.8s ease-out 0.4s;
+  animation-fill-mode: both;
+  line-height: 1.8;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .hero-title { font-size: 42px; }
+  .hero-subtitle { font-size: 26px; }
+  .hero-text { font-size: 18px; }
+}
+
+@media (max-width: 480px) {
+  .hero-title { font-size: 34px; }
+  .hero-subtitle { font-size: 22px; }
+}

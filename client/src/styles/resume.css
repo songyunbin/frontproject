@@ -1,0 +1,119 @@
+.resume-list {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+.resume-item {
+    background: #ffffff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(218, 189, 142, 0.1);
+    border: 1px solid #f5ede0;
+   
+    transition: none;
+    transform: none; 
+}
+
+
+.resume-item:hover {
+    transform: none;
+    box-shadow: 0 4px 15px rgba(218, 189, 142, 0.1);
+}
+
+.resume-heading {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #d4a574;
+    font-weight: 700;
+    border-bottom: 2px solid #f9f5ed;
+    padding-bottom: 10px;
+}
+
+.resume-goal {
+    background: #ffffff; 
+    border-left: none; 
+    padding-left: 40px; 
+}
+
+.resume-desc {
+    color: #6b6158;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+.resume-year, .resume-title {
+    display: none;
+}
+
+.resume-button-area {
+    display: flex;
+    justify-content: center; 
+    margin-top: 40px;
+    padding-bottom: 20px;
+}
+
+.print-resume-btn {
+    
+    background: #d4a574; 
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 15px rgba(212, 165, 116, 0.4);
+}
+
+.print-resume-btn:hover {
+    background-color: #c9975b; 
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(212, 165, 116, 0.5);
+}
+
+@media print {
+
+    .resume-button-area,
+    .print-resume-btn {
+        display: none !important;
+    }
+    
+    .resume-heading {
+        font-size: 18px;
+    }
+
+    .resume-item {
+        background: transparent !important;
+        box-shadow: none !important;
+        border: 1px solid #ccc; 
+        margin-bottom: 15px;
+        padding: 15px;
+    }
+    .resume-desc {
+        font-size: 14px;
+        color: #333 !important;
+    }
+    .resume-goal {
+        padding-left: 15px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .resume-list {
+        gap: 20px;
+    }
+    .resume-item {
+        padding: 25px;
+    }
+    .resume-heading {
+        font-size: 20px;
+    }
+    .resume-goal {
+        padding-left: 25px;
+    }
+}
