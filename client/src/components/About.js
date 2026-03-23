@@ -35,7 +35,7 @@ function About() {
               <ul className="card-list">
                 <li>부천북고등학교 졸업 <br />
                   (2018.03 ~ 2021.02)</li>
-                <li>인하공업전문대학교 컴퓨터정보공학과 whfdjq 
+                <li>인하공업전문대학교 컴퓨터정보공학과 졸업
                   (2023.03 ~ 2026.02)</li>
               </ul>
             </div>
