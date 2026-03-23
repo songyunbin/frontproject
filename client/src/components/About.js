@@ -1,4 +1,4 @@
-import meImg from "../assets/me.png";
+import meImg from "../assets/me.jpg";
 import "../styles/about.css"; 
 
 function About() {
@@ -35,8 +35,8 @@ function About() {
               <ul className="card-list">
                 <li>부천북고등학교 졸업 <br />
                   (2018.03 ~ 2021.02)</li>
-                <li>인하공업전문대학교 컴퓨터정보공학과 재학 
-                  (2023.03 ~ )</li>
+                <li>인하공업전문대학교 컴퓨터정보공학과 whfdjq 
+                  (2023.03 ~ 2026.02)</li>
               </ul>
             </div>
 
@@ -46,16 +46,16 @@ function About() {
                 <div className="skill-item">
                   <span className="skill-name">영어</span>
                   <div className="skill-bar">
-                    <div className="skill-level english" style={{ width: '60%' }}></div>
+                    <div className="skill-level english" style={{ width: '40%' }}></div>
                   </div>
-                  <span className="skill-percentage">60%</span>
+                  <span className="skill-percentage">40%</span>
                 </div>
                 <div className="skill-item">
                   <span className="skill-name">일본어</span>
                   <div className="skill-bar">
-                    <div className="skill-level japanese" style={{ width: '30%' }}></div>
+                    <div className="skill-level japanese" style={{ width: '10%' }}></div>
                   </div>
-                  <span className="skill-percentage">30%</span>
+                  <span className="skill-percentage">10%</span>
                 </div>
               </div>
             </div>

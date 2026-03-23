@@ -2,12 +2,12 @@ import '../styles/skills.css';
 
 function Skills() {
   const skills = [
-    { name: 'React', level: 80, color: '#3b82f6' },
-    { name: 'Node.js', level: 70, color: '#10b981' },
-    { name: 'JavaScript', level: 70, color: '#f59e0b' },
-    { name: 'HTML/CSS', level: 70, color: '#f97316' },
-    { name: 'SpringBoot', level: 60, color: '#6b7280' },
-    { name: 'Flutter', level: 80, color: '#059669' },
+    { name: 'React', level: 60, color: '#3b82f6' },
+    { name: 'Node.js', level: 60, color: '#10b981' },
+    { name: 'JavaScript', level: 60, color: '#f59e0b' },
+    { name: 'HTML/CSS', level: 60, color: '#f97316' },
+    { name: 'SpringBoot', level: 40, color: '#6b7280' },
+    { name: 'Flutter', level: 60, color: '#059669' },
   ];
 
   return (
