@@ -37,11 +37,6 @@ function Header() {
           <li><button onClick={() => scrollToSection('portfolio')}>Portfolio</button></li>
           <li><button onClick={() => scrollToSection('contact')}>Contact</button></li>
 
-          <li>
-            <button onClick={handlePrint} className="print-button">
-              인쇄 / PDF 저장
-            </button>
-          </li>
         </ul>
       </nav>
     </header>
