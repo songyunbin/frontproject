@@ -2,7 +2,7 @@ import '../styles/resume.css';
 
 function Resume() {
     
-    const RESUME_PDF_PATH = "/resume/202344006_송윤빈_자기소개서.pdf";
+    const RESUME_PDF_PATH = "/resume/202344006_송윤빈_이력서및자기소개서.pdf";
     return (
         <section id="resume" className="section section-gray">
             <div className="container">
