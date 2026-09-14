@@ -48,7 +48,7 @@ function About() {
                   <div className="skill-bar">
                     <div className="skill-level english" style={{ width: '40%' }}></div>
                   </div>
-                  <span className="skill-percentage">40%</span>
+                  <span className="skill-percentage">30%</span>
                 </div>
                 <div className="skill-item">
                   <span className="skill-name">일본어</span>
