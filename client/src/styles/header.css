@@ -90,17 +90,6 @@ nav button:hover::after {
   box-shadow: 0 4px 10px rgba(212, 165, 116, 0.3);
 }
 
-.print-button:hover {
-  background: #c08b55;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 14px rgba(212, 165, 116, 0.4);
-}
-
-@media print {
-  .header, .print-button {
-    display: none !important;
-  }
-}
 
 @media (max-width: 768px) {
   nav ul { gap: 20px; }
