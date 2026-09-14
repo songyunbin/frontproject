@@ -20,9 +20,7 @@ function Header() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  const handlePrint = () => {
-    window.print();
-  };
+
 
   return (
     <header className={`header ${scrolled ? 'scrolled' : ''}`}>

@@ -94,19 +94,3 @@ html {
 @media (max-width: 480px) {
   .section-title { font-size: 30px; }
 }
-
-@media print {
-  body {
-    background-color: transparent !important;
-    color: #000 !important;
-  }
-  .section {
-    min-height: auto;
-    padding: 30px 0;
-    break-after: always;
-  }
-  .container {
-    padding: 0 10px;
-    max-width: 100%;
-  }
-}
